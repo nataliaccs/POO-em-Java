@@ -1,15 +1,23 @@
 package POO;
 
-public class Animal {
+public abstract class Animal {
 	
 	private String nome;
 	private int idade;
 	
-	public void emitirsom()
+	// Método Construtor
+	
+	public Animal (String nome, int idade)
 	{
-		System.out.println("Emitindo som...");
+		this.nome = nome;
+		this.idade = idade;
 	}
-
+	
+	
+	//Método Abstrato
+	
+	abstract public String emitirSom();
+	
 	public String getNome() {
 		return nome;
 	}
@@ -25,7 +33,8 @@ public class Animal {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	
+
+
 	
 
 }
